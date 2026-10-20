@@ -1,0 +1,5 @@
+print("==CHATBOT V1==")
+nombre= input("¿cual es tu nombre?")
+print(f" hola {nombre}, escribime algo (por ejemplo: hola, contame un chiste, adios)")
+mensaje=input("vos:")
+mensaje=mensaje.lower()
