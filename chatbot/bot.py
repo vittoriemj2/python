@@ -5,5 +5,9 @@ mensaje=input("Vos: ")
 mensaje=mensaje.lower()
 if "hola" in mensaje:
 	print("Bot: ¡Hola! ¿En que puedo ayudarte?")
+elif "chiste" in mensaje:
+  print("¿Qué le dice un jardinero a otro? Nos vemos cuando podamos.")
+elif "adios" in mensaje:
+	print(f"Bot: Adios! {nombre}")
 else:
-	print("Bot: No entendí muy bien, pero estoy aprendiendo!")
+	print("Bot: No te entendí muy bien, ¡pero estoy aprendiendo!")
