@@ -16,10 +16,10 @@ while True:
   mensaje=input("Vos: ")
   mensaje=mensaje.lower()
   if mensaje in palabras_salida:
-  	print("Bot: ¡Listo! Fue un gusto charlar, nos vemos.")
+    print("Bot: ¡Listo! Fue un gusto charlar, nos vemos.")
     print(f"Cantidad de mensajes : {cantidad_mensajes}")
     break
-  for clave in respuestas:
-  	if clave in mensaje:
-    		print(respuestas[clave])
-        break
+for clave in respuestas:
+  if clave in mensaje:
+    print(f"Bot: {respuestas[clave]}")
+    break
