@@ -25,6 +25,6 @@ plt.pie(cantidades,labels=productos,autopct="%1.1f%%")
 
 plt.title("Cantidades por Producto")
 
-plt.savefig("unidades.pdf")
+plt.savefig("unidades.png")
 
 plt.show()
