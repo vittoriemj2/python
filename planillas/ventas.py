@@ -13,3 +13,6 @@ print(f"Cantidad de filas del primer mes: {len(ventas)} || Cantidad de filas del
 
 unir_ventas = pd.concat([ventas, ventas_2], ignore_index=True)
 print(f"La cantidad final de filas es: {len(unir_ventas)}")
+
+unir_ventas["Facturacion"]=unir_ventas["Precio_Unitario"]*unir_ventas["Unidades"]
+print(unir_ventas["Facturacion"])
