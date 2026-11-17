@@ -3,8 +3,13 @@ import pandas as pd
 
 primer_mes = input("Primer mes de comparación (archivo): ")
 
-ventas = pd.read_excel(primer_mes, sheet_name="ventas")
+ventas = pd.read_excel(primer_mes, sheet_name="Ventas")
 
-print(ventas)
+#print(ventas)
 
-#agosto.xlsx
+negocios=pd.read_excel(primer_mes, sheet_name="Negocios")
+
+ventas_primer_mes = ventas.merge(negocios, on="Negocio", how="left")
+
+print(ventas_primmer_mes)
+
