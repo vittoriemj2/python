@@ -37,4 +37,13 @@ x = (ventana.winfo_screenwidth() - ancho) // 2
 y = (ventana.winfo_screenheight() - alto) // 2
 ventana.geometry(f"{ancho}x{alto}+{x}+{y}")
 
+
+tk.Label(ventana,text="Primer mes :").pack(padx=20, pady=(15, 2))
+caja1=tk.Entry(ventana)
+caja1.pack()
+
+tk.Label(ventana, text="Segundo mes:").pack(pady=(10, 2))
+caja2=tk.Entry(ventana)
+caja2.pack()
+
 ventana.mainloop()
