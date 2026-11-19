@@ -11,17 +11,15 @@
 def es_multiplo(num):
 
     if (num%3==0):
-        print("fizz")
+        return "fizz"
 
-     if (num%5==0):
-        print("buzz")
+    if (num%5==0):
+        return "buzz"
 
-     if (num%3==0) and (num%5==0):
+    if (num%3==0) and (num%5==0):
         print("fizzbuzz")
 
-        return num
-    
-    print(es_multiplo(10))
+    return num
 
-
+print(es_multiplo(2))
 
