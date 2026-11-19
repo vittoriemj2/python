@@ -9,9 +9,19 @@
 # ninguno -> valor del número entero
 
 def es_multiplo(num):
+
     if (num%3==0):
         print("fizz")
-    if (num%5==0):
+
+     if (num%5==0):
         print("buzz")
-    if (num%15==0):
+
+     if (num%3==0) and (num%5==0):
         print("fizzbuzz")
+
+        return num
+    
+    print(es_multiplo(10))
+
+
+
