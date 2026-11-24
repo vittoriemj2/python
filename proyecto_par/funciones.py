@@ -17,20 +17,13 @@ def es_par(num):
 print(es_par(0))
 
 
-def separar_pares_impares(nums):
-    """Recibe una lista de números y devuelve dos listas: pares e impares."""
-    pares = []
-    impares = []
+
+def par_o_impar(nums):
+    par_impar_list=[] 
     for num in nums:
-        if es_par(num) == "par":
-            pares.append(num)
-        else:
-            impares.append(num)
-    return pares, impares
+        par_impar_list.append(es_par(num))
+    return par_impar_list
 
-
-nums = [8,9,0,4,5]
-pares, impares = separar_pares_impares(nums)
-print("Números:", nums)
-print("Pares:", pares)
-print("Impares:", impares)
+nums=[8,9,0,4,5]
+par_impar_list=par_o_impar(nums)
+print(par_impar_list)
