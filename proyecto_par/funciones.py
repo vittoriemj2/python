@@ -19,11 +19,19 @@ print(es_par(0))
 
 
 def par_o_impar(nums):
+ """Indica si cada número de una lista es par o impar.
+
+    Args:
+        nums (list[int]): Lista de números a evaluar.
+
+    Returns:
+        list[str]: Lista con "par" o "impar" para cada número,
+        respetando el orden original.
+    """
+
     par_impar_list=[] 
     for num in nums:
         par_impar_list.append(es_par(num))
     return par_impar_list
 
 nums=[8,9,0,4,5]
-par_impar_list=par_o_impar(nums)
-print(par_impar_list)
