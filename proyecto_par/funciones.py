@@ -19,7 +19,7 @@ print(es_par(0))
 
 
 def par_o_impar(nums):
- """Indica si cada número de una lista es par o impar.
+    """Indica si cada número de una lista es par o impar.
 
     Args:
         nums (list[int]): Lista de números a evaluar.
