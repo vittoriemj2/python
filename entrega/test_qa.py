@@ -19,6 +19,5 @@ class TestQA(unittest.TestCase):          # al heredar de TestCase, unittest sab
     def test_devolver_numero(self):
         self.assertEqual(fizzbuzz(43), 43)           # criterio 5: 43 no es múltiplo de 3 ni de 5
 
-
 if __name__ == '__main__':                # solo se cumple si corrés este archivo directamente
     unittest.main()                       # ejecuta todos los tests de la clase
